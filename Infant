@@ -1,0 +1,14 @@
+
+public class Infant extends People {
+	
+	//constructor 
+	public Infant (String name, int age) {
+		super(name,age);
+	}
+	
+	public void displayProfile() {
+	      System.out.println("Name: " + getName());
+	      System.out.println("Age: " + getAge());
+	      System.out.println("--------------------------------");
+	}
+}
