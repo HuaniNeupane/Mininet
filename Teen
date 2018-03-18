@@ -1,0 +1,34 @@
+
+public class Teen extends People{
+	private String friends;
+	private String status;
+	
+	//constructor 
+	public Teen (String name, int age, String status, String friends) {
+		super(name, age);
+		this.status = status;
+		this.friends = friends;
+	}
+	//accessor 
+	public String getStatus() {
+		return status;
+	}
+	public String getFriends() {
+		return friends;
+	}
+	//mutator
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public void setFriends(String friends) {
+		this.friends = friends;
+	}
+	//inherited method
+	public void displayProfile() {
+		 System.out.println("Name: " + getName());
+	      System.out.println("Age: " + getAge());
+	      System.out.println("Status: " + status);
+	      System.out.println("friends: " + friends);
+	      System.out.println("--------------------------------");
+	}
+}
