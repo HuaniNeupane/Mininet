@@ -1,0 +1,54 @@
+
+public class Adult extends People {
+	
+	private String status;
+	private String friends;
+	private String children;
+	private String partner; 
+	
+	//constructor 
+	public Adult (String name, int age, String status, String partner, String children, String friends) 
+	{
+		super(name, age);
+		this.status = status;
+		this.friends = friends;
+		this.children = children;
+		this.partner = partner;
+	}
+	public String getStatus() { //accessor
+		return status;
+	}
+	public String getFriends() {
+		return friends;
+	}
+	public String getChildren() {
+		return children;
+	}
+	public void setPartner(String partner) { //mutator 
+		this.partner = partner;
+	}
+	public void setChildren (String children) {
+		this.children = children;
+	}
+	public void setStatus (String status) {
+		this.status = status;
+	}
+	public void setFriends (String friends) {
+		this.friends = friends;
+	}
+	public void displayProfile() {
+	      System.out.println("Name: " + getName());
+	      System.out.println("Age: " + getAge());
+	      System.out.println("Status: " + status);
+	      System.out.println("partner: " + partner);
+	      
+	      if (children != null) {
+	    	  System.out.println("children: " + children);
+	      }else {
+	    	  System.out.println("has no children =) ");
+	      }
+	      
+	      System.out.println("friends: " + friends);
+	      System.out.println("--------------------------------");
+	   }
+}
