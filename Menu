@@ -1,0 +1,17 @@
+
+public class Menu {
+
+		   public void printMenu() {
+		      System.out.println("\n********************************");
+		      System.out.println("* ======= MiniNet Menu ======= *");
+		      System.out.println("* 1. List everyone             *");
+		      System.out.println("* 2. Select a profile          *");
+		      System.out.println("* 3. Add a profile             *");
+		      System.out.println("* 4. Update a profile          *");
+		      System.out.println("* 5. Quit                      *");
+		      System.out.println("********************************");
+		      System.out.print("Enter an option: ");
+		   }
+		
+
+}
